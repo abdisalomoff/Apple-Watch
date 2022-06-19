@@ -1,0 +1,77 @@
+.health {
+  display: flex;
+  align-items: center;
+  padding: 240px 0px;
+  margin-top: 70px;
+  background-image: url("../../images/health-bgi.png");
+  background-size: 1350px 950px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.health__content {
+  margin-left: auto;
+  text-align: left;
+  width: 100%;
+  max-width: 490px;
+}
+
+.health__title {
+  display: inline-block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #ffff;
+}
+
+.health__text {
+  margin-top: 30px;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffff;
+  border-left: 3px solid #fff;
+}
+
+.health__link {
+  display: block;
+  padding: 12px 38px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  width: 100%;
+  max-width: 260px;
+  background: #ea625c;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffff;
+  text-decoration: none;
+
+  &:hover{
+    color: #ffffff;
+  }
+}
+
+@include max-width(520px) {
+  .health {
+    padding: 96px 0px 106px;
+  }
+
+  .health__title {
+    font-size: 46px;
+    line-height: 120%;
+  }
+
+  .health__text {
+    font-size: 14px;
+  }
+
+  .health__link {
+    padding: 9px 24px;
+    max-width: 192px;
+    font-size: 14px;
+  }
+}
